@@ -2,10 +2,26 @@
 # Ex.Name:Write a C++ Program to read two sequence of character  value from the keyboard and display the value on the monitor?
 ## Date:1/9/25
 ## Aim:
-
+To write a C++ program that accepts two sequences of character values from the keyboard and displays them on the monitor.
 
 ## Algorithm:
-To write a C++ program that accepts two sequences of character values from the keyboard and displays them on the monitor.
+
+
+Start the program.
+
+Declare two character arrays (strings) to store the input sequences.
+
+Prompt the user to enter the first sequence of characters.
+
+Read the first sequence using cin.
+
+Prompt the user to enter the second sequence of characters.
+
+Read the second sequence using cin.
+
+Display both sequences on the monitor using cout.
+
+End the program.
 
 ## Program:
 #include<iostream>
