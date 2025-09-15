@@ -1,53 +1,47 @@
-## Ex.No: 1  
-## Ex.name: Write a C++ Program to display the following pattern using inline function.  
+# Ex.No2
+## Ex.Name: Write a C++ program to find the sum of GP series using friend function.
+## Date:
 
-**Date:**  
+## Aim:
+To compute the the sum of AP series using friend function.
 
-### Aim:  
-To write a program that displays a right-angled triangle star pattern using an inline function.
+## Algorithm:
+1. Start the program.
+2. Read first term a, common ratio r, and number of terms n.
+3. Use the formula Sn = a * (pow(r, n) - 1) / (r - 1).
+4. Define a class and declare a friend function to compute sum.
+5. Display the result.
+6. End program.
 
-### Algorithm:  
-1. Start the program.  
-2. Initialize `n` as the number of rows.  
-3. Define an inline function to print the pattern.  
-4. Use nested loops:  
-   - Outer loop controls the number of rows.  
-   - Inner loop prints stars decreasing each row.  
-5. End the program.  
-
-### Program:
+## Program:
 ```cpp
 #include <iostream>
 using namespace std;
-
-inline void pattern(int n) {
-    for (int i = n; i >= 1; i--) {
-        for (int j = 1; j <= i; j++) {
-            cout << "*";
-        }
-        cout << endl;
+class student
+{
+    public:
+    int apseries(int a,int n,int d)
+    {
+        return a+(n-1)*d;
     }
-}
 
-int main() {
-    int n;
-    cin >> n;
-    pattern(n);
-    return 0;
+};
+int main()
+{
+    int a,n,d;
+    cin>>a>>n>>d;
+    student g;
+    cout<<"the sum is "<<g.apseries(a,n,d);
 }
 ```
 
-### Output:
+## Output:
+<img width="694" height="521" alt="image" src="https://github.com/user-attachments/assets/aa617712-2565-4671-a6b3-c624c303e398" />
 
-<img width="1167" height="330" alt="image" src="https://github.com/user-attachments/assets/a25b109e-b495-406b-a260-9376fd222d03" />
 
-### Result:
-```cpp
-Input: 4
-****
-***
-**
-*
 
+## Result:
 ```
-
+Input: 1 100 5
+The sum is 496
+```
